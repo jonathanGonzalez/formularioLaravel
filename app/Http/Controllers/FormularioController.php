@@ -11,8 +11,8 @@ class FormularioController extends Controller
     {
         return view('formularios/restaurante');
     }
-    public function gracias()
+    public function enviar()
     {
-        return view('formularios/agradecimiento');
+        return view('index/index');
     }
 }

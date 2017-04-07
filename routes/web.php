@@ -16,4 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('formulario', 'FormularioController@formulario');
-Route::get('gracias', 'FormularioController@gracias');
+Route::get('formulario/restaurante', 'FormularioController@formulario');
+Route::post('/', array('uses' => 'FormularioController@enviar'));
+

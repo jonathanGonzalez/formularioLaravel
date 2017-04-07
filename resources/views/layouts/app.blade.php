@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Laravel Html & forms</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body id="grad">
     <nav class="navbar bg-red">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,14 +29,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand text-primary">Big Burguer</a>
+        <a class="navbar-brand text-w">Big Burguer</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">            
-            <li class="@yield('indexActivo')"><a href="{!! url('/') !!}">Página principal</a></li>
-            <li class="@yield('formularioActivo')"><a href="{!! url('/formulario') !!}">Formulario</a></li>                        
+            <li class="@yield('indexActivo')"><a href="{!! url('/') !!}">Página principal &nbsp <span class="glyphicon glyphicon-paste"></span></a></li>
+            <li class="@yield('formularioActivo')"><a href="{!! url('/formulario') !!}">Formulario &nbsp <span class="glyphicon glyphicon-thumbs-up"></span></a></li>                        
         </ul>
         
         </div><!-- /.navbar-collapse -->

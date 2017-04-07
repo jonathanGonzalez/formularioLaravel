@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
+@section('formularioActivo')
+ active
+@stop
+
 @section('titulo')
     <span>Encuesta</span><br>   
 @stop
+
 @section('contenido')   
-    {!! Form::open(['url' => 'foo/bar']) !!}
+    {!! Form::open(['action' => 'FormularioController@enviar']) !!}
     
     {!! Form::label('p1_lbl','¿volvería a nuestro restaurante?');!!}       
     {!! Form::label('p1_lbl','si');!!}       
@@ -37,7 +42,7 @@
     <br>
 
     {!! Form::label('email_lbl', 'E-Mail Address:'); !!}
-    {!! Form::text('email_txt', 'example@gmail.com', ['class' => 'form-control']); !!}
+    {!! Form::text('email_txt', 'ejemplo@example.com', ['class' => 'form-control']); !!}
 
     <br>
     <br>
@@ -55,12 +60,12 @@
     <br>
     
     {!! Form::label('Fecha_lbl', 'Que prefiere en un restaurantes de comida rapidas'); !!}
-    {!! Form::select('size', ['t' => 'tiempos cortos', 'p' => 'buena presentación de la comida', 'las dos' => 'nada'], 'S'); !!}
+    {!! Form::select('size', ['t' => 'tiempos cortos', 'p' => 'buena presentación de la comida', 'd' => 'las dos'], 'S'); !!}
 
     <br>
     <br>    
 
-    {!! Form::label('ha leido los terminos y condiciones', '');!!}
+    {!! Form::label('Ha leido los términos y condiciones', '');!!}
     {!! Form::checkbox('name', 'value', true); !!}
 
     <br>
@@ -74,9 +79,6 @@
     {!! Form::close() !!}    
 @stop
 
-@section('formularioActivo')
- active
-@stop
 
 
 

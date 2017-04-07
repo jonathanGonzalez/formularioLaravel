@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
 @section('titulo')
-Las mejores recetas.
+Plataforma de calificación del servicio
+@stop
+
+@section('indexActivo')
+ active
 @stop
 
 @section('contenido')
@@ -17,7 +21,7 @@ Las mejores recetas.
       <div class="caption">
         <h3 class="text-center">Hamburguesas</h3>
         <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-        <p class="text-center"><a href="#" class="btn btn-primary" role="button">calificar servicio</a></p>
+        <p class="text-center"><a href="{!! url('formulario') !!}" class="btn btn-primary" role="button">calificar servicio</a></p>
       </div>
     </div>
   </div>
@@ -27,7 +31,7 @@ Las mejores recetas.
       <div class="caption">
         <h3 class="text-center">Burros</h3>
         <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-        <p class="text-center"><a href="#" class="btn btn-primary" role="button">calificar servicio</a></p>
+        <p class="text-center"><a href="{!! url('formulario') !!}" class="btn btn-primary" role="button">calificar servicio</a></p>
       </div>
     </div>
   </div>
@@ -37,16 +41,11 @@ Las mejores recetas.
       <div class="caption">
         <h3 class="text-center">Patacones</h3>
         <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-        <p class="text-center"><a href="#" class="btn btn-primary" role="button">servicio servicio</a></p>
+        <p class="text-center"><a href="{!! url('formulario') !!}" class="btn btn-primary" role="button">Calificar servicio</a></p>
       </div>
     </div>
   </div>
 
   
 </div>
-@stop
-
-
-@section('indexActivo')
- active
 @stop
