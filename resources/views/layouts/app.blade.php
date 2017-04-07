@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="{!! asset('css/main.css') !!}">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar bg-red">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -29,21 +29,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand text-primary">Big Burguer</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">            
-            <li class="@yield('indexActivo')"><a href="{!! url('/') !!}">index</a></li>
+        <ul class="nav navbar-nav navbar-right">            
+            <li class="@yield('indexActivo')"><a href="{!! url('/') !!}">Página principal</a></li>
             <li class="@yield('formularioActivo')"><a href="{!! url('/formulario') !!}">Formulario</a></li>                        
         </ul>
         
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
     </nav>
-    <h1>Encuesta de satisfacción</h1>
-    <h2>@yield('titulo')</h2>
+        
+    <div class="container">
+      <h1 class="text-center">Restaurante de comidas rápidas</h1>
+      <h3 class="text-center">@yield('titulo')</h3> 
+      @yield('contenido')
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

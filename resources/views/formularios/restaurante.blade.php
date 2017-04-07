@@ -1,12 +1,12 @@
-
-
 @extends('layouts.app')
 
 @section('titulo')
-    <span>hola desde las vistas :)</span>   
+    <span>Encuesta</span><br>   
+@stop
+@section('contenido')   
     {!! Form::open(['url' => 'foo/bar']) !!}
 
-    {!! Form::label('email_lbl', 'E-Mail Address', ['class' => 'form-control']); !!}
+    {!! Form::label('email_lbl', 'E-Mail Address:'); !!}
     {!! Form::text('email_txt', 'example@gmail.com', ['class' => 'form-control']); !!}
     <br>
     {!! Form::label('Fecha_lbl', 'Fecha de nacimiento', ['class' => 'form-control']); !!}
