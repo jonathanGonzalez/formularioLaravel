@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index/index');
 });
+
+Route::get('formulario', 'FormularioController@formulario');
+Route::get('gracias', 'FormularioController@gracias');
